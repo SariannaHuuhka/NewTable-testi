@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="My Table" max_length="40" name="x_695426_testiappi_my_table" type="collection">
+        <element label="Field1" max_length="40" name="field1" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Field2" max_length="40" name="field2" type="string"/>
+        <element attributes="encode_utf8=false" label="Field3" max_length="32" name="field3" reference="incident" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Field4" max_length="40" name="field4" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="field3"/>
+        </index>
+    </element>
+</database>
